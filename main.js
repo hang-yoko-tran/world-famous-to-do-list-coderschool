@@ -35,5 +35,5 @@ function toggleDone(index) {
 
 function toggleUndone() {
 	let unDoneToDoList = masterToDoList.filter(todo => todo.isDone === true);
-	document.getElementById('undone-only').checked ? renderTodoList(masterToDoList) : renderTodoList(unDoneToDoList);
+	document.getElementById('undone-only').checked ? renderTodoList(unDoneToDoList) : renderTodoList(masterToDoList);
 }
