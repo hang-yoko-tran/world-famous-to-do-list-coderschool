@@ -26,11 +26,15 @@ ul {
 	padding: 0;
 }
 li {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 	cursor: pointer;
-	background-color: #FDEBC5;
+	background-color: #fdebc5;
 	width: 400px;
+	height: 40px;
 	margin: 10px auto;
-	padding-left: 10px;
+	padding: 10px 15px;
 	text-align: center;
 	font-size: 18px;
 }
@@ -54,10 +58,15 @@ li {
 	margin-top: 30px;
 }
 
-#todo-list {
+input {
+	text-align: center;
 }
 
 img {
 	width: 228px;
 	height: 198px;
+}
+
+i {
+	color: black;
 }

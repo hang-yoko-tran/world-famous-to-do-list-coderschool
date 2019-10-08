@@ -7,7 +7,9 @@ function renderTodoList(todos) {
 			(html += `
       <li onclick='toggleDone(${i})'>
         <span class="${todo.isDone ? 'is-done' : ''}">${todo.text}</span>
-				<a href='#' onclick='remove(${i});event.stopPropagation();'>X</a>
+        <a href='#' onclick='remove(${i});event.stopPropagation();'>
+          <i class="fas fa-trash-alt"></i>
+        </a>
      	</li>`)
 	);
 	document.getElementById('todo-list').innerHTML = html;
@@ -33,5 +35,5 @@ function toggleDone(index) {
 
 function toggleUndone() {
 	let unDoneToDoList = masterToDoList.filter(todo => todo.isDone === true);
-	document.getElementById('undone-only').checked ? renderTodoList(unDoneToDoList) : renderTodoList(masterToDoList);
+	document.getElementById('undone-only').checked ? renderTodoList(masterToDoList) : renderTodoList(unDoneToDoList);
 }
