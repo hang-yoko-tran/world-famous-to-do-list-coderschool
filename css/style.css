@@ -1,0 +1,63 @@
+* {
+	font-family: 'Cabin', sans-serif;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: whitesmoke;
+}
+
+.title {
+	font-size: 42px;
+}
+
+a {
+	text-decoration: none;
+}
+
+.is-done {
+	text-decoration: line-through;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+}
+li {
+	cursor: pointer;
+	background-color: #FDEBC5;
+	width: 400px;
+	margin: 10px auto;
+	padding-left: 10px;
+	text-align: center;
+	font-size: 18px;
+}
+
+#todo {
+	width: 400px;
+	height: 44px;
+	font-size: 18px;
+}
+
+#btn-add {
+	width: 100px;
+	height: 32px;
+	font-size: 18px;
+	color: whitesmoke;
+	margin-top: 30px;
+	background-color: black;
+}
+
+#undone-only {
+	margin-top: 30px;
+}
+
+#todo-list {
+}
+
+img {
+	width: 228px;
+	height: 198px;
+}
